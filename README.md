@@ -154,4 +154,6 @@ La logique C# est terminée. On utilise F10 pour survoler la ligne et confirmer 
 
 
 # Déployez votre solution sous forme d’exécutable Windows. Ci-dessous le lien de l'executable
-https://drive.google.com/drive/folders/1gY1wIJDnuKc1DZZIy4IERVx_UX9529Fl?usp=sharing
+Le dossier contenant l'executable: https://drive.google.com/drive/folders/1gY1wIJDnuKc1DZZIy4IERVx_UX9529Fl?usp=sharing
+
+le lien directe vers l'executable: https://drive.google.com/file/d/162k8XMdVjJuwnas6VyNXxj7qLJ0XOQWl/view?usp=drive_link
