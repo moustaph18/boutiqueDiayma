@@ -1,22 +1,23 @@
-# Boutique Diayma
+Boutique Diayma
+
+Application ASP.NET Core permettant de consulter des produits, gérer un panier et passer commande.
 
 # Quels sont les projets de la solution ?
-/* La solution a un seul projet qui est Diayma.csproj qui se trouve dans le repertoire P2FixAnAppDotNetCode  */
+ La solution a un seul projet qui est Diayma.csproj qui se trouve dans le repertoire P2FixAnAppDotNetCode  
 
 # Quelle est la version SDK .NET utilis�e par ces projets ?
-/* Le projet utilise le SDK .NET Core 2.0 */
+ Le projet utilise le SDK .NET Core 2.0 
 
 # Installez le SDK
 
-/*
 Pour cloner, construire et exécuter le projet Boutique Diayma, il faut installés sur votre machine le SDK:
     -Premierement: le projet utilise le framework netcoreapp2.0. Vous devez installer le SDK .NET Core de la série 2.x. c'est a dire 2.0 ou le 2.1
     -Deuxiement: Assurons-nous que la version affichée est dans la plage 2.x, en tapant la commande dotnet --version 
     Et dans notre cas on la version du sdk 2.1.818
-*/
+
 
 # Explorez l’application. Signalez 2 bugs trouvés ?
-/*
+
 1. Calcul incorrect du montant total du panier
 Fichier : P2FixAnAppDotNetCode/Models/Cart.cs
 Méthode : GetTotalValue()
@@ -29,7 +30,7 @@ Méthode : ProductRepository (Constructeur)
 
 La liste _products est déclarée comme static, ce qui indique une intention de persister les données en mémoire partagée entre les requêtes. Cependant, le constructeur initialise cette liste (new List<Product>()) et recharge les données (GenerateProductData()) à chaque instanciation.
 Comme ProductRepository est enregistré en tant que service Transient dans Startup.cs (services.AddTransient<IProductRepository, ProductRepository>();), une nouvelle instance est créée à chaque requête HTTP. Par conséquent, l'inventaire est remis à zéro à chaque action de l'utilisateur, et les décrémentations de stock (lors d'une commande) sont perdues immédiatement.
-*/
+
 
 # 7. Placez un point d’arrêt sur les lignes suivantes du code :
 # a. CartSummaryViewComponent ligne 12
@@ -152,4 +153,5 @@ Mode choisi: Pas à pas principal (F10)
 La logique C# est terminée. On utilise F10 pour survoler la ligne et confirmer que la vue est correctement retournée, sans entrer dans le moteur Razor ou les ViewComponents déjà vérifiés séparément.
 
 
-# Déployez votre solution sous forme d’exécutable Windows.
+# Déployez votre solution sous forme d’exécutable Windows. Ci-dessous le lien de l'executable
+https://drive.google.com/drive/folders/1gY1wIJDnuKc1DZZIy4IERVx_UX9529Fl?usp=sharing
